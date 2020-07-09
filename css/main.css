@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700");
+.wrap {
+  padding: 2%;
+  background-color: whitesmoke;
+  color: #4b4b4b;
+}
+
+.wrap .menu {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.wrap .menu .menu__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px black solid;
+  padding-bottom: 2%;
+}
+
+.wrap .menu .menu__header .title {
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #4b4b4b;
+}
+
+.wrap .menu .menu__icon {
+  width: 3%;
+  height: 3%;
+  cursor: pointer;
+}
+
+.wrap .menu .menu__tabs {
+  opacity: 0;
+  list-style: none;
+  padding: 0;
+  margin-top: 2%;
+  position: absolute;
+}
+
+.wrap .menu .menu__tabs--show {
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  list-style: none;
+  position: absolute;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+.wrap .menu .menu__tabs--show li[class*=menu__tabs--tab] {
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+.wrap .menu .title {
+  position: absolute;
+  top: o;
+  left: 50%;
+  font-size: 2vw;
+}
+
+.wrap .panels {
+  display: none;
+}
+
+.wrap .panels.show {
+  display: block;
+}
+
+.wrap .panels.show .headline {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.wrap .panels.show .panels__panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5%;
+}
+
+.wrap .panels.show .panels__panel .panels__panel--img {
+  width: 50%;
+  height: 80%;
+}
+
+.wrap .panels.show .panels__panel .panels__panel--text {
+  margin: 0 2%;
+  font-size: 1.5vw;
+  font-family: "Noto Sans JP";
+}
+/*# sourceMappingURL=main.css.map */
